@@ -125,3 +125,19 @@ function createloan($conn, $NIC, $Name, $Mobile, $Employee, $Emptype)
 
 
 }
+
+function getUserInfo($conn,$username)
+{
+    $sql="SELECT * FROM registered_user WHERE username = ?;";
+    $stmt=mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt,$sql)){   
+        exit();
+    }
+    mysqli_stmt_bind_param($stmt,"s",$username);
+    mysqli_stmt_execute($stmt);
+    $resultdata = mysqli_stmt_get_result($stmt);
+    mysqli_stmt_close($stmt);
+    if($row=mysqli_fetch_assoc($resultdata)){
+        return $row;
+    }
+}

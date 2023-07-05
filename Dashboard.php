@@ -31,8 +31,8 @@ session_start();
       <div class="Dropdown2">
         <img src="Resourses/Images/abstract-user-flat-4.svg" class="Profile" alt="Profile"> 
         <div class="Dropcontent2">
-          <a href="Login.html">Logout</a>
-          <a href="settings.html">Settings</a>
+          <a href="Includes/logout.inc.php">Logout</a>
+          <a href="settings.php">Settings</a>
         </div>
       </div>
     </div>
