@@ -1,0 +1,278 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.logo
+{
+    width: 100px;
+    height: 80px;
+    margin-right: 20px ;
+}
+
+.img1
+{
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    top: 22px;
+}
+
+.img2
+{
+    height: 30px;
+    width: 25px;
+    padding-left: 10px;
+    margin-right: 20px;
+    position: relative;
+    top: 15px;
+}
+
+
+.profile
+{
+    height: 40px;
+    width: 50px;
+    position: relative;
+    top: 15px;
+    padding-right: 10px;
+}
+
+
+.navigation
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 11vh;
+    background-color: #0CC0DF;
+}
+
+.navi
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #0CC0DF;
+    position: relative;
+    top: 28px;
+    width: 65vw;
+    height: 3vh;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    border: 2px solid black;
+    
+}
+
+.li
+{
+    list-style-type: none;
+    border-right: 1px solid black;
+    padding-right: 50px;
+
+}
+
+.navi li a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.trans
+{
+    border-left: 1px solid black;
+    padding-left: 50px;
+}
+
+.navi li
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown 
+{
+    display: none;
+    position: absolute;
+    right: -55px;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    z-index: 1;
+}
+
+.dropdown a
+{
+    color: black;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+    width: 15vw;
+    font-size: 17px;
+    
+} 
+
+.navi li:hover .dropdown{display: block;}
+
+.dropdown a:hover {background-color: #ddd;}
+
+
+.dropdown2
+{
+    display: none;
+    position: absolute;
+    right: -2.5px;
+    background-color: #f1f1f1;
+    min-width: 40px;
+    z-index: 1;
+
+}
+
+.dropdown2 a
+{
+    color: black;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+    width: 15vw;
+    font-size: 17px;
+    
+} 
+
+.navi li:hover .dropdown2{display: block;}
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.Dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+  
+.Dropcontent
+{
+    display: none;
+    position: absolute;
+    right: 2px;
+    background-color: #f1f1f1;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.Dropcontent a
+{
+    color: black;
+    padding: 5px 12px;
+    text-decoration: none;
+    display: block;
+} 
+
+.Dropdown:hover .Dropcontent {display: block;}
+
+.Dropcontent a:hover {background-color: #ddd;}
+
+
+.portfolio{
+    background:linear-gradient(135deg,#3f6eb5,#03129bca);
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.welcome{
+    font-size: 25px;
+    margin-left:200px;
+    color: white;
+}
+
+.name{
+    display: flex;
+    margin-left: 100px;
+    font-size: 25px;
+}
+.history{
+position: relative;
+top: 13vh;
+margin-left:700px;
+font-size: 20px;
+color: white;
+text-decoration: none;
+}
+
+.heading1{
+    margin-left: 200px;
+}
+
+.myportfolio{
+    margin-left: 200px;
+   
+}
+
+.accNum{
+    display: flex;
+}
+.input{
+    border-bottom: #ddd;
+}
+
+.heading1{
+    font-size: 25px;
+    color: white;
+}
+
+.lable1{
+    font-size: 18px;
+}
+
+.lable2{
+    font-size:18px;
+}
+
+.lable3{
+    font-size: 18px;
+}
+
+.lable4{
+    font-size: 18px;
+}
+
+.heading2{
+    margin-left: 200px;
+    font-size: 25px;
+    color: white;
+}
+
+.field{
+    margin-left: 60px;
+    width:400px;
+    height:30px;
+  
+}
+
+.field1{
+    margin-left: 65px;
+    width:400px;
+    height:30px;
+}
+
+.field2{
+    margin-left: 40px;
+    width:400px;
+    height:30px;
+}
+
+.field3{
+    margin-left: 80px;
+    width:400px;
+    height:30px;
+}
+
+.field4{
+    margin-left: 20px;
+    width:400px;
+    height:30px;
+}

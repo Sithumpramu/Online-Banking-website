@@ -1,0 +1,47 @@
+.body{
+    background:linear-gradient(135deg,#3f6eb5,#03129bca);
+    color: aliceblue;
+}
+
+
+.image{
+    height:110px;
+    width:130px;
+}
+
+.head{
+    padding-left:400px;
+    font-size:40px;
+}
+.container{
+   display:flex;
+   border-bottom:2px solid black;
+   background-color: #0CC0DF;
+}
+
+.conditions{
+    margin-left:50px ;
+}
+
+.disc{
+ list-style-type: disc;
+}
+
+.agree{
+    margin-left: 65px;
+    font-size: 20px;
+}
+
+.agree1{
+    margin-left: 45px;
+}
+
+.agree2{
+    margin-left: 45px;
+}
+
+.submit{
+    margin-left: 1200px;
+    width:250px;
+    height:20px;
+}

@@ -1,0 +1,223 @@
+.body2{
+    background-color: #0CC0DF;
+}
+
+
+.container{
+    background:linear-gradient(135deg,#3f6eb5,#03129bca);
+    color: aliceblue;
+    padding-top: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+.image{
+    height:110px;
+    width:130px;
+}
+
+.head{
+    padding-left:470px;
+    font-size:40px;
+    color: aliceblue;
+}
+.body{
+   display:flex;
+   border-bottom:2px solid black;
+   background-color:  #0CC0DF;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+.form-group1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group1 input{
+    margin-left: 200px;
+    width:500px;
+    height:30px;
+}
+
+.form-group2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group2 input{
+    margin-left: 55px;
+    width:500px;
+    height:30px;
+}
+
+.form-group3{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group3 input{
+    margin-left: 150px;
+    width:500px;
+    height:30px;
+}
+
+.form-group4{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.group4{
+    margin-left: 170px;
+    width:300px;
+    height:30px;
+}
+
+.form-group5{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group5 input{
+    margin-left: 160px;
+    width:300px;
+    height:30px;
+}
+
+.form-group6{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group6 input{
+    margin-left: 170px;
+    width:300px;
+    height:30px;
+}
+
+.form-group7{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group7 input{
+    margin-left: 145px;
+    width:300px;
+    height:30px;
+}
+
+.form-group8{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group8 input{
+    margin-left: 200px;
+    width:300px;
+    height:30px;
+}
+
+.form-group9{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left:130px ;
+    padding-top: 10px;
+    
+}
+
+.form-group9 input{
+    margin-left: 138px;
+    width:30px;
+    height:20px;
+}
+
+.form-group10{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+
+.form-group10 input{
+    margin-left: 175px;
+    width:300px;
+    height:30px;
+}
+
+.form-group11{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left:130px ;
+    padding-top: 10px;
+    
+}
+
+.form-group11 input{
+    margin-left: 138px;
+    width:30px;
+    height:20px;
+}
+.link{
+    margin-left:00px;
+    
+}
+
+.link a
+{
+    color: rgb(119, 120, 168);
+    text-decoration: none;
+    
+}
+
+.agree{
+    margin-left:00px;
+}
+
+.submit{
+    display: flex;
+}
+
+.sub1{
+    margin-left:00px;
+    height:30px;
+    width:100px;
+    color: solid black;
+    background-color:white;
+    border: white;
+}
+
+.sub2{
+    margin-left:550px;
+    height:30px;
+    width:100px;
+    color: solid black;
+    background-color:white;
+    border: white;
+}
+  
+.sub2 a
+{
+    text-decoration: none;
+}

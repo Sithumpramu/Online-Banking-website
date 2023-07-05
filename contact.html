@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <img class="icon" src="Resourses/Images/Logo.png" alt="home">
+    <div class="top">
+        <h1>Contact</h1>
+        <p>Please use following links to contact us</p>
+    </div>
+
+    <div class="imgcontainer">
+        <div id="phone-btn" ><a href="#" onclick="funcphone()"><img src="Resourses/Images/phone-icon.svg" alt="Phoneicon"></a></div>
+        <div id="email-btn"> <a href="#" onclick="funcemail()"><img src="Resourses/Images/primary-email.svg" alt="Email" ></a></div>
+        <div id="location-btn"><a href="#" onclick="funclocation()"><img src="Resourses/Images/location-dot-solid.svg" alt="Location"></a></div>
+    </div>
+    <div class="location-div"  id="location-div">
+        <div class="bottomcon">
+            <p class="para">Locate a nearby Location</p>
+            <a href="https://www.google.com/maps" target="_blank"><img class="map" src="Resourses/Images/maps.png" alt="Maps"></a>
+            <p class="para">You can also write to us</p>
+            <p class="paralast">Digital Banking Unit,15th floor, Shepramah Bank Head Office, No 73, Colombo 3</p>
+        </div>
+    </div>
+    
+    <div class="hidden" id="phone-div">
+        <div class="bottomcon2 "  >
+            <p>Hotline</p>
+            <p>0112 455 222</p>
+        </div>
+    </div>
+    
+    <div class="hidden" id="email-div">
+        <div class="bottomcon2" >
+            <p>Email Adress</p>
+            <a href="https://mail.google.com" target="_blank"><p>spmbankdigital@spm.com</p></a>
+        </div>
+    </div>
+    
+
+    <a href="#" onclick="goback()"><span class="button">Back</span></a>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
