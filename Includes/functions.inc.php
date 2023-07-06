@@ -36,6 +36,7 @@ function Useridexisist($conn, $username)
 }
 
 
+
 function createuser($conn, $name, $Nic, $Accountnum, $country, $Phonenum, $email, $username, $password)
 {
     $sql = "INSERT INTO registered_user (FullName, Phonenumber, Acc_No, Email, Username, Password, NIC_No, Country) VALUES (?, ?, ?, ?, ?, ?, ?, ?);";

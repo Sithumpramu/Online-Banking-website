@@ -21,6 +21,8 @@ if (isset($_POST["submit"]))
       header("location: ../Signup.php?error=usernametaken");
       exit();
      }
+    
+
 
 
      createuser($conn, $name, $Nic, $Accountnum, $country, $Phonenum, $email, $username, $password);

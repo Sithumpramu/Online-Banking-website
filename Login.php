@@ -26,7 +26,7 @@
         <input type="password" placeholder="Enter Password" class="input" id="password" name="password"><br>
         <p class="forgot"><a href="#" onclick="myfunction();">Forgot Password?</a> </p><br>
         <button type="submit" id="button" name="submit" onclick="validate();">Login</button>
-        <p class="new"><a href="www.google.com">New To Online Banking?</a> </p>
+        <p class="new"><a href="Signup.php">New To Online Banking?</a> </p>
      </form> 
     
    

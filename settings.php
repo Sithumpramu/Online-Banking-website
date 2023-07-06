@@ -68,7 +68,7 @@ $userdetails=getUserInfo($conn,$_SESSION["username"]);
          </div>
     </div>
   </div>
-    <a href="Dashboard.html"><span class="button">Back</span></a>
+    <a href="Dashboard.php"><span class="button">Back</span></a>
     <script src="settings.js"></script>
 </body>
 </html>

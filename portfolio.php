@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once 'Includes/Dbh.inc.php';
+require_once 'Includes/functions.inc.php';
+$userdetails=getUserInfo($conn,$_SESSION["username"]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +16,7 @@
 </head>
 <body>
     <div class="navigation">
-        <div class="left"><img class="logo" src="Resourses/Images/Logo.png" alt="LOgo">
+        <div class="left"><img class="logo" src="Resourses/Images/Logo.png" alt="Logo">
         <a href="Dashboard.php"><img class="img1" src="Resourses/Images/Home.svg" alt="Home">
         </div></a>
         <ul class="navi">
@@ -35,7 +42,7 @@
 
         <div class="right"><img class="img2" src="Resourses/Images/message-regular.svg" alt="Message">
         <div class="Dropdown">
-          <a href="#"><img class="profile" src="profile picture.png" alt="Profile"></a>
+          <a href="#"><img class="profile" src="Resourses/Images/abstract-user-flat-4.svg" alt="Profile"></a>
           <div class="Dropcontent">
             <a href="Includes/logout.inc.php">Logout</a>
             <a href="settings.php">Settings</a>
@@ -48,9 +55,14 @@
 
 
         <div class="portfolio">
-        <p class="welcome"><b>Welcome!</b></p><br>
-        <div class="name">
-        <p class="name"><b>(Name)</b></p><br><br>
+        <?php
+            if(isset($_SESSION["username"]))
+            {
+              echo "<h3><center>Hello!  $_SESSION[username] </center></h3>";
+            }
+            
+        
+        ?>
         <!-- <a class="history" href="Transaction.html"><p><b>View Transaction History</b></p></a><br> -->
         </div>
        
@@ -61,7 +73,7 @@
             <lable class="lable1" for="Account number"><b>Account Number</b></lable>
         </div>
         <div class="input">
-            <p class=" bar"></p><br><br><br><br>
+            <?php echo "<center><p>$userdetails[Acc_No]</p></center>"?><br><br><br><br>
         </div>
     </div>
             

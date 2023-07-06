@@ -80,7 +80,7 @@ session_start();
 
     <div class="transfer">
       <img src="Resourses/Images/id-card-clip-solid.svg" class="icon1" alt="portfolio">
-      <button class="button"><a href="portfolio.html">Portfolio</a></button>
+      <button class="button"><a href="portfolio.php">Portfolio</a></button>
     </div>
 
     <div class="transfer">
