@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,6 +55,8 @@
       <p>Activity</p>
       <p>Details</p>
     </div>
+
+    <p>We couldn't find</p>
 
 </body>
 </html>

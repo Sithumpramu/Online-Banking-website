@@ -1,5 +1,9 @@
 <?php
 session_start();
+require_once 'Includes/Dbh.inc.php';
+require_once 'Includes/functions.inc.php';
+$userdetails=getUserInfo($conn,$_SESSION["username"]);
+
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +22,9 @@ session_start();
         <a href="#" onclick="myFunction()"><img src="Resourses/Images/menu-icon.svg" class="Menu" alt="Menu"></a>
         <div id="menuDropdown" class="Dropcontent1">
           <a href="#" class="active">Dashboard</a>
-          <a href="OwnAccountTransfer.html">Fund Transfer</a>
-          <a href="paybills.html">Bill Payments</a>
-          <a href="Transaction.html">All Transactions</a>
+          <a href="OwnAccountTransfer.php">Fund Transfer</a>
+          <a href="paybills.php">Bill Payments</a>
+          <a href="Transaction.php">All Transactions</a>
           <a href="contact.html">Contact</a>
           <a href="Terms and conditions.html">Terms and Conditions</a>
         </div>
@@ -59,10 +63,10 @@ session_start();
       <div class="Dropdown3">
         <button class="button">Transfer</button>
         <div class="Dropcontent3">
-          <a href="OwnAccountTransfer.html">Own Account Transfer</a>
-          <a href="Otheracctransfer.html">Other Account Transfer</a>
-          <a href="otherBanktransfer.html">Other Bank Transfer</a>
-          <a href="CreditCardTransfer.html">Bank Credit Card Transfer</a>
+          <a href="OwnAccountTransfer.php">Own Account Transfer</a>
+          <a href="Otheracctransfer.php">Other Account Transfer</a>
+          <a href="otherBanktransfer.php">Other Bank Transfer</a>
+          <a href="CreditCardTransfer.php">Bank Credit Card Transfer</a>
         </div>
        </div>
       
@@ -70,12 +74,12 @@ session_start();
 
     <div class="transfer">
       <img src="Resourses/Images/file-invoice-dollar-solid.svg" class="icon1" alt="bills">
-      <button class="button"><a href="paybills.html">Pay Bills</a></button>
+      <button class="button"><a href="paybills.php">Pay Bills</a></button>
     </div>
 
     <div class="transfer">
       <img src="Resourses/Images/mono-file-transfer-section.svg" class="icon1" alt="Transactions">
-      <button class="button"><a href="Transaction.html">Transactions</a></button>
+      <button class="button"><a href="Transaction.php">Transactions</a></button>
     </div>
 
     <div class="transfer">
@@ -101,10 +105,11 @@ session_start();
   <div class="middlecontainer">
     <h3>My Accounts</h3>
     <div class="accounts">
-      <h4>Savings Account</h4>
+      <h4>Account</h4>
       <h4>Current Balance</h4>
     </div>
-
+    <?php echo "<p style='position:relative; top:7vh;'>$userdetails[Acc_No]</p>"?>
+    <?php echo "<p style='position:relative; top:5vh; left:35vw;'>$userdetails[Acc_No]</p>"?>
     <div class="Exchange">
       <h4>Exchange Rates</h4>
       <div class="topic">
@@ -136,6 +141,7 @@ session_start();
       </div>
       </div>
     </div>
+    
     <h3 class="recenttrans">Recent Transactions</h3>
   </div>
      

@@ -14,7 +14,7 @@
         <img src="Resourses/Images/Logo.png" class= "img" alt="Logo">
         <div class="navigation">
             <ul>
-            <li class="first"><a href="Applyloan.html">Apply For Loan</a> </li>
+            <li class="first"><a href="Applyloan.php">Apply For Loan</a> </li>
             <li><a href="contact.html">Contact Us</a>  </li>
             </ul>
             </div>

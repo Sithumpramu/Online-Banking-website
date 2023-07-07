@@ -1,10 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="SPM Bank">
-        <title>Own Account Transfer</title>
-        <link rel="stylesheet" type="text/css" href="OwnaAcctransfer.css">
+        <title>Other Account Transfer</title>
+        <link rel="stylesheet" type="text/css" href="otheraccTransfer.css">
 
     </head>
 
@@ -16,9 +20,9 @@
             <ul class="navi">
                 <li class="li"><a href="#" class="trans">Transfer</a>
                   <ul class="dropdown">
-                   <li><a href="OwnAccountTransfer.html">Own Account Transfer</a></li>
-                   <li><a href="otheraccTransfer.html">Other Account Transfer</a></li>
-                   <li><a href="OtherBankTransfer.html">Other Bank Transfer</a></li>
+                   <li><a href="#">Own Account Transfer</a></li>
+                   <li><a href="Otheracctransfer.html">Other Account Transfer</a></li>
+                   <li><a href="otherBanktransfer.html">Other Bank Transfer</a></li>
                    <li><a href="CreditCardTransfer.html">Credit Card Transfer</a></li>
                   </ul>
                 </li>
@@ -46,27 +50,26 @@
            </div>
     
         </div>
-
-
+        
         <div class="container">
-            <div class="heading"> Own Account Transfer</div>
+            <div class="heading"> Other Account Transfer</div>
             
-            <form id="myForm"actions="">
+            <form id="myForm" actions="">
                 <div class="text">
-                    <p>Transfer Funds Between Your Own Accounts</p>
+                    <p>Transfer Funds to Account wirhin the Bank</p>
                 </div>
                 <div class="card-details">
                     <div class="card-box-type">
-                        <span class="details">From Account</span>
-                        <input type="text">
+                        <span class="details" >From Account</span>
+                        <input type="text" required>
                     </div>
                     <div class="card-box-type">
-                        <span class="details">To Account</span>
-                        <input type="text">
+                        <span class="details">Beneficiary's Account No</span>
+                        <input type="text"  required>
                     </div>
                     <div class="card-box-type">
                         <span class="details">Amount LKR</span>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     
                     <div class="tab">
@@ -77,15 +80,19 @@
                             </select>
                         </div>
     
-                        <input class="date" type="date">
+                        <input class="date" type="date" required>
                     </div>
                     
                     <div class="card-box">
                         <span class="details">Sender's Account Description</span>
-                        <input type="text">
+                        <input type="text" required>
                     </div>
                     <div class="card-box">
                         <span class="details">Beneficiary Account Description</span>
+                        <input type="text">
+                    </div>
+                    <div class="card-box">
+                        <span class="details">Purpose of Payment</span>
                         <input type="text">
                     </div>
 
@@ -93,18 +100,17 @@
                
 
                 <div class="radio">
-                    <p><input type="radio">Transfer Now</p> 
+                    <p><input type="radio">I agree with the terms of use</p> 
                 </div>
                 <hr>
                 &nbsp;
                 <div>
-                    <button class="button" onclick="submitForm()">Submit</button>
+                    <button name="id" type="submit" class="button" onclick="submitForm()">Submit</button>
                 </div>
                 <input id="sub" type="button" onclick="myFunction()" value="Reset form">
             </form>
            
         </div>
-        
-        <script src="OwnaAcctransfer.js"></script>
+        <script src="otheraccTransfer.js"></script>
     </body>
 </html>

@@ -35,6 +35,25 @@ function Useridexisist($conn, $username)
     
 }
 
+function Incorrectaccnum($conn, $Accountnum)
+{
+    $result = 0;
+    $numberString = (string) $Accountnum; // Convert the number to a string
+    $length = strlen($numberString);
+
+    if($length<8 || $length>12)
+    {
+        $result = true;
+        return $result;
+    }
+    else
+    {
+        $result = false;
+        return $result;
+
+    }
+
+}
 
 
 function createuser($conn, $name, $Nic, $Accountnum, $country, $Phonenum, $email, $username, $password)
@@ -91,6 +110,8 @@ function loginuser($conn, $username, $password)
         session_start();
         $_SESSION["userid"] = $uidexists["UserId"];
         $_SESSION["username"] = $uidexists["Username"];
+        
+
         header("location: ../Dashboard.php");
         exit();
 

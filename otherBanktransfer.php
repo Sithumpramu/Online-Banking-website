@@ -1,10 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="SPM Bank">
-        <title>Other Account Transfer</title>
-        <link rel="stylesheet" type="text/css" href="otheraccTransfer.css">
+        <title>Other Bank Transfer</title>
+        <link rel="stylesheet" type="text/css" href="OtherBankTransfer.css">
 
     </head>
 
@@ -16,9 +20,9 @@
             <ul class="navi">
                 <li class="li"><a href="#" class="trans">Transfer</a>
                   <ul class="dropdown">
-                   <li><a href="#">Own Account Transfer</a></li>
+                   <li><a href="OwnAccountTransfer.html">Own Account Transfer</a></li>
                    <li><a href="Otheracctransfer.html">Other Account Transfer</a></li>
-                   <li><a href="otherBanktransfer.html">Other Bank Transfer</a></li>
+                   <li><a href="Other Bank Transfer.html">Other Bank Transfer</a></li>
                    <li><a href="CreditCardTransfer.html">Credit Card Transfer</a></li>
                   </ul>
                 </li>
@@ -48,23 +52,54 @@
         </div>
         
         <div class="container">
-            <div class="heading"> Other Account Transfer</div>
+            <div class="heading">Other Bank Transfer</div>
             
-            <form id="myForm" actions="">
+            <form id="myForm"actions="">
                 <div class="text">
-                    <p>Transfer Funds to Account wirhin the Bank</p>
+                    <p>Transfer Funds to a National Bank Account</p>
                 </div>
                 <div class="card-details">
                     <div class="card-box-type">
-                        <span class="details" >From Account</span>
+                        <span class="details">From Account</span>
+                        <input type="text" required>
+                    </div>
+                    <div class="card-box-type">
+                        <span class="details">Beneficiary's Bank</span>
                         <input type="text" required>
                     </div>
                     <div class="card-box-type">
                         <span class="details">Beneficiary's Account No</span>
-                        <input type="text"  required>
+                        <input type="text" required>
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    <div class="card-box-type">
+                        <span class="details">Beneficiary's Name</span>
+                        <input type="text" required>
                     </div>
                     <div class="card-box-type">
-                        <span class="details">Amount LKR</span>
+                        <span class="details">Beneficiary's Identification</span>
+                        <input type="text" required>
+                    </div>
+                    &nbsp;
+                    <div class="box-type-Amount">
+                        <span class="details">Amount </span>
+                        <select class="list-box">
+                            <option>AUD</option>
+                            <option>CAD</option>
+                            <option>CHF</option>
+                            <option>CNY</option>
+                            <option>DKK</option>
+                            <option>EUR</option>
+                            <option>GBP</option>
+                            <option>HKD</option>
+                            <option>JPY</option>
+                            <option>NOK</option>
+                            <option>NZD</option>
+                            <option>SEK</option>
+                            <option>SGD</option>
+                            <option selected>USD</option>
+                        </select>
                         <input type="text" required>
                     </div>
                     
@@ -75,20 +110,17 @@
                                 <option>Repeated Transfer</option>
                             </select>
                         </div>
-    
+                        
                         <input class="date" type="date" required>
                     </div>
-                    
-                    <div class="card-box">
+                    &nbsp;
+                    &nbsp;
+                    <div class="card-box-type">
                         <span class="details">Sender's Account Description</span>
                         <input type="text" required>
                     </div>
-                    <div class="card-box">
+                    <div class="card-box-type">
                         <span class="details">Beneficiary Account Description</span>
-                        <input type="text">
-                    </div>
-                    <div class="card-box">
-                        <span class="details">Purpose of Payment</span>
                         <input type="text">
                     </div>
 
@@ -98,15 +130,19 @@
                 <div class="radio">
                     <p><input type="radio">I agree with the terms of use</p> 
                 </div>
-                <hr>
                 &nbsp;
+                &nbsp;
+               <hr>
+               &nbsp;
                 <div>
-                    <button name="id" type="submit" class="button" onclick="submitForm()">Submit</button>
+                    <button class="button"onclick="submitForm()">Submit</button>
                 </div>
                 <input id="sub" type="button" onclick="myFunction()" value="Reset form">
             </form>
            
         </div>
-        <script src="otheraccTransfer.js"></script>
+
+        <script src="OtherBankTransfer.js"></script>
+
     </body>
 </html>

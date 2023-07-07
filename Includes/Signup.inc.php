@@ -16,9 +16,16 @@ if (isset($_POST["submit"]))
     require_once 'functions.inc.php';
 
 
+    
     if(Useridexisist($conn, $username) !== false)
      {
       header("location: ../Signup.php?error=usernametaken");
+      exit();
+     }
+
+     if(Incorrectaccnum($conn, $Accountnum) !== false)
+     {
+      header("location: ../Signup.php?error=incorrectaccnum");
       exit();
      }
     

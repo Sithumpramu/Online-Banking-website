@@ -101,7 +101,7 @@
             <br><br>
             <div class="submit">
             <button class="sub1" onclick="resetForm();">Reset Form</button> 
-            <button type="submit" name="submit" class="sub2"  onclick="validateForm();">Register</button> 
+            <button type="submit" name="submit" class="sub2"  onclick="validateForm(); myfunction();">Register</button> 
             </div>
             <br><br>
         </form>
@@ -116,6 +116,11 @@
             if($_GET["error"] == "usernametaken")
             {
                 echo '<p style="position: absolute; top: 120px; left:42vw; font-weight:800; color:red; font-size:18px">' . "Username already taken!" .'</p>';
+            }
+
+            if($_GET["error"] == "incorrectaccnum")
+            {
+                echo '<p style="position: absolute; top: 120px; left:42vw; font-weight:800; color:red; font-size:18px">' . "Invalid acount number!" .'</p>';
             }
 
             if($_GET["error"] == "none")
