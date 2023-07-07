@@ -20,20 +20,20 @@ session_start();
             <ul class="navi">
                 <li class="li"><a href="#" class="trans">Transfer</a>
                   <ul class="dropdown">
-                   <li><a href="OwnAccountTransfer.html">Own Account Transfer</a></li>
-                   <li><a href="otheraccTransfer.html">Other Account Transfer</a></li>
-                   <li><a href="OtherBankTransfer.html">Other Bank Transfer</a></li>
-                   <li><a href="CreditCardTransfer.html">Credit Card Transfer</a></li>
+                   <li><a href="OwnAccountTransfer.php">Own Account Transfer</a></li>
+                   <li><a href="otheraccTransfer.php">Other Account Transfer</a></li>
+                   <li><a href="OtherBankTransfer.php">Other Bank Transfer</a></li>
+                   <li><a href="CreditCardTransfer.php">Credit Card Transfer</a></li>
                   </ul>
                 </li>
-                <li class="li"><a href="paybills.html">Pay bills</a></li>
-                <li class="li"><a href="Transaction.html">Transactions</a></li>
-                <li class="li"><a href="portfolio.html">Portfolio</a></li>
+                <li class="li"><a href="paybills.php">Pay bills</a></li>
+                <li class="li"><a href="Transaction.php">Transactions</a></li>
+                <li class="li"><a href="portfolio.php">Portfolio</a></li>
                 <li class="li"><a href="#">Self management</a>
                   <ul class="dropdown2">
-                    <a href="Changeusername.html">Change Username</a>
-                    <a href="passwordchange.html">Change Password</a>
-                    <a href="Manageaccounts.html">Mange Accounts</a>
+                    <a href="Changeusername.php">Change Username</a>
+                    <a href="passwordchange.php">Change Password</a>
+                    <a href="Manageaccounts.php">Mange Accounts</a>
                   </ul>
                 </li>
             </ul>

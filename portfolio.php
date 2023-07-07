@@ -3,6 +3,7 @@ session_start();
 require_once 'Includes/Dbh.inc.php';
 require_once 'Includes/functions.inc.php';
 $userdetails=getUserInfo($conn,$_SESSION["username"]);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,20 +23,20 @@ $userdetails=getUserInfo($conn,$_SESSION["username"]);
         <ul class="navi">
             <li class="li"><a href="#" class="trans">Transfer</a>
               <ul class="dropdown">
-               <li><a href="ownAcctransfer.html">Own Account Transfer</a></li>
-               <li><a href="otherBanktransfer.html">Other Account Transfer</a></li>
-               <li><a href="otherBanktransfer.html">Other Bank Transfer</a></li>
-               <li><a href="cardtransfer.html">Bank Credit Card Transfer</a></li>
+               <li><a href="ownAcctransfer.php">Own Account Transfer</a></li>
+               <li><a href="otherBanktransfer.php">Other Account Transfer</a></li>
+               <li><a href="otherBanktransfer.php">Other Bank Transfer</a></li>
+               <li><a href="cardtransfer.php">Bank Credit Card Transfer</a></li>
               </ul>
             </li>
-            <li class="li"><a href="paybills.html">Pay bills</a></li>
-            <li class="li"><a href="Transaction.html">Transactions</a></li>
-            <li class="li"><a href="portfolio.html">Portfolio</a></li>
+            <li class="li"><a href="paybills.php">Pay bills</a></li>
+            <li class="li"><a href="Transaction.php">Transactions</a></li>
+            <li class="li"><a href="portfolio.php">Portfolio</a></li>
             <li class="li"><a href="#">Self management</a>
               <ul class="dropdown2">
-                <li><a href="Changeusername.html">Change Username</a></li>
-                <li><a href="passwordchange.html">Change Password</a></li>
-                <li><a href="Manageaccounts.html">Mange Accounts</a></li>
+                <li><a href="Changeusername.php">Change Username</a></li>
+                <li><a href="passwordchange.php">Change Password</a></li>
+                <li><a href="Manageaccounts.php">Mange Accounts</a></li>
               </ul>
             </li>
         </ul>

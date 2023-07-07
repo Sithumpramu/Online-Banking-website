@@ -5,7 +5,7 @@
 
 body
 {
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(12,192,223));
+    background-color: #e2e2e2;
 }
 
 
@@ -83,7 +83,7 @@ h2
 .uppercontainer
 {
     display: flex;
-    background-color: #78765f;
+    background-color: #98cfd9;
     position: relative;
     top: 7vh;
     height: 95px;
@@ -167,6 +167,7 @@ h2
     text-align: center;
     padding-top: 10px;
     border: 1px solid black;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(12,192,223));
 
 }
 

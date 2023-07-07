@@ -92,9 +92,9 @@ $userdetails=getUserInfo($conn,$_SESSION["username"]);
       <div class="Dropdown3">
         <button class="button">Self-Management</button>
         <div class="Dropcontent3">
-          <a href="Changeusername.html">Change Username</a>
-          <a href="passwordchange.html">Change Password</a>
-          <a href="Manageaccounts.html">Mange Accounts</a>
+          <a href="Changeusername.php">Change Username</a>
+          <a href="passwordchange.php">Change Password</a>
+          <a href="Manageaccounts.php">Mange Accounts</a>
         </div>
 
       </div>

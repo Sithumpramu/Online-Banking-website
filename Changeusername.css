@@ -182,7 +182,7 @@ body{
     display:flex;
     flex-direction: column;
     height:100vh;
-    background:linear-gradient(135deg,#3f6eb5,#03129bca);
+    background:linear-gradient(135deg,#adafb3,#2032dcca);
 }
 
 .container{
