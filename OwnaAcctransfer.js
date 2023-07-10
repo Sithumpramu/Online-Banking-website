@@ -6,5 +6,5 @@ function myFunction(){
 
     alert("Your transaction has been complete !");
 
-    document.getElementById("myForm").reset();
+   
  }           

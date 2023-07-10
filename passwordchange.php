@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -52,7 +56,7 @@
             &nbsp;
             <div class="heading">Change Password</div> 
             &nbsp;
-            <form actions="">
+            <form method="post" action="Includes/Updatepwd.inc.php">
                 <div class="head-text">
                     <div class="text">
                      <img  class="icons" src="Resourses/Images/exclamation.jpg" ></i></a><strong>Importan:</strong>This disclosure of security features to third parties is the responsibility of the user</p>
@@ -67,13 +71,13 @@
 
                        <div  class="card-box-type">
                             <span class="details">New Password</span>
-                            <input type="password" name="New password" class="pan" placeholder="Enter the New password">
+                            <input type="password" name="Newpassword" class="pan" placeholder="Enter the New password">
                         </div>
                         <p class="para"><img class="icons02" src="Resourses/Images/question mark.jpg" > &nbsp;(8 characters remaining)</p> 
                        <!--this image is taken from google-->
                        <div  class="card-box-type">
                             <span class="details">Confirm Password</span>
-                            <input type="password" name="confirm password" class="pan01" placeholder="Re Enter the password">
+                            <input type="password" name="confirmpassword" class="pan01" placeholder="Re Enter the password">
                        </div> 
                       
                        &nbsp;
@@ -121,5 +125,8 @@
            
         </div>
         <script src="passwordchange.js"></script>
+
+
+        
     </body>
 </html>

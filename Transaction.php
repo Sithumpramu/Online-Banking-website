@@ -53,10 +53,12 @@ session_start();
     <h2>All Transactions</h2>
     <div class="Contenttopic">
       <p>Activity</p>
-      <p>Details</p>
+      <p>Details</p> 
     </div>
 
-    <p>We couldn't find</p>
+    
+    
+   
 
 </body>
 </html>

@@ -67,10 +67,10 @@ function createuser($conn, $name, $Nic, $Accountnum, $country, $Phonenum, $email
         exit();
     }
 
-    $hashedpwd= password_hash($password, PASSWORD_DEFAULT);
+    // $hashedpwd= password_hash($password, PASSWORD_DEFAULT);
 
 
-    mysqli_stmt_bind_param($stmt, "ssssssss", $name, $Phonenum, $Accountnum, $email,  $username, $hashedpwd, $Nic, $country);
+    mysqli_stmt_bind_param($stmt, "ssssssss", $name, $Phonenum, $Accountnum, $email,  $username, $password, $Nic, $country);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
 
@@ -155,6 +155,7 @@ function getUserInfo($conn,$username)
     if(!mysqli_stmt_prepare($stmt,$sql)){   
         exit();
     }
+
     mysqli_stmt_bind_param($stmt,"s",$username);
     mysqli_stmt_execute($stmt);
     $resultdata = mysqli_stmt_get_result($stmt);
@@ -163,3 +164,25 @@ function getUserInfo($conn,$username)
         return $row;
     }
 }
+
+
+function updatepwd($conn,$pwd,$Uname)
+{
+    $sql="UPDATE registered_user SET Password = ? WHERE Username=?";
+    $stmt=mysqli_stmt_init($conn);
+    if(!mysqli_stmt_prepare($stmt,$sql))
+    {   
+        
+        header("location: ../passwordchange.php?error=fail");
+        exit();
+    }
+
+    mysqli_stmt_bind_param($stmt,"ss",$pwd,$Uname);
+    mysqli_stmt_execute($stmt);
+    $resultdata = mysqli_stmt_get_result($stmt);
+    mysqli_stmt_close($stmt);
+    if($row=mysqli_fetch_assoc($resultdata))
+    {
+        return $row;
+    }
+}   
